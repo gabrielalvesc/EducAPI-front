@@ -1,0 +1,79 @@
+
+.sessao{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fafafa;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2.7rem;
+  width: 90rem;
+  height: 63.7rem;
+}
+
+.fundo-login{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+.custom-card{
+  width: 38.9rem;
+  height: 51.5rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+
+}
+
+.custom-card:nth-child(1){
+  border-right: 1px solid #8D928E;
+}
+
+.custom-card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.custom-card input {
+  height: 3rem;
+}
+
+.custom-card h2{
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 4.9rem;
+}
+
+.custom-card p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #8D928E;
+  line-height: 1.8rem;
+}
+
+.card__bloco{
+  margin-top: 5.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card__areas{
+  margin-bottom: 4.7rem;
+}
+
+.card__botao{
+  display:flex;
+  justify-content: center;
+}
+

@@ -24,13 +24,12 @@ export class LoginComponent implements OnInit {
       this.navigateToHome();
     }
     this.loginForm = this.formBuilder.group({
-      email: this.formBuilder.control(undefined, [Validators.required]),
+      email: this.formBuilder.control(undefined, [Validators.required, Validators.email]),
       password: this.formBuilder.control(undefined, [Validators.required])
     });
   }
 
   onSubmit(): void {
-    console.log(this.loginForm.value)
     if (this.loginForm) {
       this.login(this.loginForm.value.email, this.loginForm.value.password);
     }

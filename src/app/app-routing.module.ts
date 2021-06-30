@@ -15,7 +15,11 @@ const routes: Routes = [
       {
         path: 'challenges',
         loadChildren: () => import('src/app/components/challenge/challenge.module').then(m => m.ChallengeModule)
-      }
+      },
+      {
+        path: 'users',
+        loadChildren: () => import('src/app/components/users/users.module').then(m => m.UsersModule)
+      },
     ]
   },
   {

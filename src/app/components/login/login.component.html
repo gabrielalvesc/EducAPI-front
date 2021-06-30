@@ -1,9 +1,55 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <label for="login">Login</label>
-    <input type="text" formControlName="email">
+<section class="sessao">
+    <div class="container">
+        <div class="fundo-login">
+            <div class="custom-card">
+                <h2>Entrar</h2>
+                <p>Faça login para usar nossos serviços</p>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <fieldset class="card__bloco">
+                        <label for="">E-mail:</label>
+                        <div class="card__areas">
+                            <input type="text" placeholder="Digite seu e-mail" name="e-mail" id="card__email" formControlName="email">
+                        </div>
 
-    <label for="login">Password</label>
-    <input type="password" formControlName="password">
-    <button type="submit" class="btn btn-primary">Log In</button>
-</form>
+                        <label for="">Senha:</label>
+                        <div class="card__areas">
+                            <input type="password" placeholder="Digite sua senha" name="senha" id="card__senha" formControlName="password">
+                        </div>
+                        <div class="card__botao">
+                            <button class="card-btn criar" type="submit" [disabled]="!loginForm.valid">Entrar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
 
+            <div class="custom-card">
+                <h2>Cadastrar-se</h2>
+                <p>Se ainda não é cadastrado, complete as etapas abaixo</p>
+                <form action="#">
+                    <fieldset class="card__bloco">
+                        <label for="">Nome Completo:</label>
+                        <div class="card__areas">
+                            <input type="text" placeholder="Digite seu e-mail" name="e-mail" id="card__email">
+                        </div>
+
+
+
+                        <label for="">E-mail:</label>
+                        <div class="card__areas">
+                            <input type="text" placeholder="Digite seu e-mail" name="e-mail" id="card__email">
+                        </div>
+
+
+                        <label for="">Senha:</label>
+                        <div class="card__areas">
+                            <input type="text" placeholder="Digite seu e-mail" name="senha" id="card__senha">
+                        </div>
+                        <div class="card__botao">
+                            <button class="card-btn criar">Criar Conta</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
